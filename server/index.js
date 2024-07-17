@@ -10,9 +10,6 @@ app.use(cors());
 app.use(express.json());
 // middleware
 
-console.log(process.env.DB_USER);
-console.log(process.env.DB_PASS);
-
 // mongo config
 // const uri = "mongodb+srv://lets-eat:Sgo1jB5Be7qNnvVz@mongo-app.q62fegx.mongodb.net/?retryWrites=true&w=majority&appName=mongo-app";
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@mongo-app.q62fegx.mongodb.net/?retryWrites=true&w=majority&appName=mongo-app`;
