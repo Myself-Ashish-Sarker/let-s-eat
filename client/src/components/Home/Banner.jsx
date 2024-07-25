@@ -1,36 +1,51 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
-const Banner = () => {
+// custom images
+import banner1 from "/banner/banner1.png";
+import banner2 from "/banner/banner2.png";
+import banner3 from "/banner/banner3.png";
+import banner4 from "/banner/banner4.png";
+import banner5 from "/banner/banner5.png";
+// custom images
+
+export default function App() {
     return (
         <>
             <Swiper
                 pagination={{
                     dynamicBullets: true,
                 }}
-                modules={[Pagination]}
+                loop={true}
+                autoplay={{
+                    
+                    disableOnInteraction: false
+                }}
+                modules={[Pagination, Autoplay, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
-            </Swiper>
+            <SwiperSlide>
+                <img src={banner1} alt="first banner" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src={banner2} alt="second banner" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src={banner3} alt="third banner" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src={banner4} alt="fourth banner" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src={banner5} alt="fifth banner" />
+            </SwiperSlide>
+        </Swiper >
         </>
     );
-};
-
-export default Banner
+}
