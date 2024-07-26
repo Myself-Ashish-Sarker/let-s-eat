@@ -15,9 +15,9 @@ const Navbar = () => {
         <li><Link className='font-semibold text-white'>About</Link></li>
     </>
     return (
-        <div>
+        <div className='pb-[4.3rem]'>
 
-            <div className="navbar bg-emerald-500">
+            <div className="navbar bg-emerald-500 fixed z-50">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
