@@ -9,10 +9,10 @@ import mainLogo from "/main_logo/main_logo.png";
 const Navbar = () => {
 
     const links = <>
-        <li><Link className='font-semibold text-white'>Home</Link></li>
-        <li><Link className='font-semibold text-white'>Category</Link></li>
-        <li><Link className='font-semibold text-white'>Contact</Link></li>
-        <li><Link className='font-semibold text-white'>About</Link></li>
+        <li><Link to="/" className='font-semibold text-white'>Home</Link></li>
+        <li><Link to="/category" className='font-semibold text-white'>Category</Link></li>
+        <li><Link to="/contact" className='font-semibold text-white'>Contact</Link></li>
+        <li><Link to="/about" className='font-semibold text-white'>About</Link></li>
     </>
     return (
         <div className='pb-[4.3rem]'>

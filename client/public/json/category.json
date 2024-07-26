@@ -1,0 +1,282 @@
+[
+    {
+        "title": "burger",
+        "name": "Classic Cheeseburger",
+        "image_link": "https://i.ibb.co/yq0xmtj/classic-cheeseburger.jpg",
+        "short_description": "Juicy beef patty with melted cheddar cheese.",
+        "large_description": "The Classic Cheeseburger is a timeless favorite. It features a juicy, perfectly seasoned beef patty, grilled to perfection and topped with a generous slice of melted cheddar cheese. The burger is served on a freshly toasted sesame seed bun, which adds a delightful crunch to every bite. Crisp lettuce, ripe tomatoes, and tangy pickles add a refreshing contrast, while a dollop of ketchup and mustard enhances the flavors. This burger is a perfect blend of textures and tastes, making it a satisfying meal for any burger enthusiast.",
+        "used_ingredients": [
+            "Beef patty",
+            "Cheddar cheese",
+            "Sesame seed bun",
+            "Lettuce",
+            "Tomatoes",
+            "Pickles",
+            "Ketchup",
+            "Mustard"
+        ]
+    },
+    {
+        "title": "burger",
+        "name": "Bacon Burger",
+        "image_link": "https://i.ibb.co/vhH5r7M/Bacon-Burger.png",
+        "short_description": "Crispy bacon atop a savory beef patty.",
+        "large_description": "The Bacon Burger is a meat lover's dream come true. It starts with a savory beef patty that is grilled to juicy perfection. This is then topped with crispy, smoky bacon that adds a satisfying crunch and a rich, smoky flavor. The burger is assembled on a soft, toasted bun, which holds everything together perfectly. Fresh lettuce, tomatoes, and onions provide a refreshing contrast to the rich flavors of the meat, while a tangy BBQ sauce adds a touch of sweetness and depth. Every bite is a delightful explosion of flavors and textures.",
+        "used_ingredients": [
+            "Beef patty",
+            "Bacon",
+            "Toasted bun",
+            "Lettuce",
+            "Tomatoes",
+            "Onions",
+            "BBQ sauce"
+        ]
+    },
+    {
+        "title": "burger",
+        "name": "Veggie Burger",
+        "image_link": "https://i.ibb.co/Y0ZFkn1/Veggie-Burger.png",
+        "short_description": "Delicious plant-based patty with fresh veggies.",
+        "large_description": "The Veggie Burger is a delicious and healthy alternative to traditional meat burgers. It features a flavorful plant-based patty made from a blend of vegetables, grains, and legumes. This patty is grilled to perfection and served on a whole-grain bun. Fresh lettuce, tomatoes, cucumbers, and avocados add a refreshing crunch and a burst of flavor. A light spread of hummus or avocado mayo enhances the overall taste, making this burger not only nutritious but also incredibly satisfying. It's perfect for those looking for a tasty, meat-free option.",
+        "used_ingredients": [
+            "Plant-based patty",
+            "Whole-grain bun",
+            "Lettuce",
+            "Tomatoes",
+            "Cucumbers",
+            "Avocados",
+            "Hummus",
+            "Avocado mayo"
+        ]
+    },
+    {
+        "title": "burger",
+        "name": "Mushroom Swiss Burger",
+        "image_link": "https://i.ibb.co/4FcnPSJ/Mushroom-Swiss-Burger.png",
+        "short_description": "Mushrooms and Swiss cheese on a beef patty.",
+        "large_description": "The Mushroom Swiss Burger is a gourmet delight. It starts with a juicy beef patty, grilled to perfection and topped with a generous portion of sautéed mushrooms. The mushrooms add a rich, earthy flavor that perfectly complements the beef. Melted Swiss cheese provides a creamy, slightly nutty taste that ties everything together. The burger is served on a toasted brioche bun, which adds a touch of sweetness and a delightful texture. Fresh lettuce and tomatoes add a refreshing contrast, making this burger a perfect balance of rich flavors and fresh ingredients.",
+        "used_ingredients": [
+            "Beef patty",
+            "Sautéed mushrooms",
+            "Swiss cheese",
+            "Toasted brioche bun",
+            "Lettuce",
+            "Tomatoes"
+        ]
+    },
+    {
+        "title": "burger",
+        "name": "BBQ Burger",
+        "image_link": "https://i.ibb.co/X5jXZPr/BBQBurger.png",
+        "short_description": "Beef patty with tangy BBQ sauce and onions.",
+        "large_description": "The BBQ Burger is a smoky, tangy treat that's perfect for BBQ lovers. It features a juicy beef patty, grilled to perfection and generously topped with tangy BBQ sauce. The sauce adds a rich, smoky flavor that enhances the taste of the beef. Crispy onion rings or caramelized onions provide a delightful crunch and sweetness, balancing out the tanginess of the BBQ sauce. The burger is served on a toasted bun, which holds all the ingredients together perfectly. Fresh lettuce and tomatoes add a refreshing touch, making this burger a delicious and satisfying meal.",
+        "used_ingredients": [
+            "Beef patty",
+            "BBQ sauce",
+            "Onion rings or caramelized onions",
+            "Toasted bun",
+            "Lettuce",
+            "Tomatoes"
+        ]
+    },
+    {
+        "title": "burger",
+        "name": "Chicken Burger",
+        "image_link": "https://i.ibb.co/37vKnpj/Chicken-Burger.png",
+        "short_description": "Grilled chicken breast with lettuce and tomato.",
+        "large_description": "The Chicken Burger is a lighter alternative to beef burgers, featuring a tender and juicy grilled chicken breast. The chicken is seasoned to perfection and grilled until it’s slightly charred and full of flavor. It is served on a soft, toasted bun with fresh lettuce and ripe tomatoes, which add a refreshing crunch. A light spread of mayo or a tangy mustard sauce enhances the overall flavor, making this burger a delicious and healthier option. It's perfect for those who prefer a lighter, yet equally satisfying burger experience.",
+        "used_ingredients": [
+            "Grilled chicken breast",
+            "Toasted bun",
+            "Lettuce",
+            "Tomatoes",
+            "Mayo or mustard sauce"
+        ]
+    },
+    {
+        "title": "burger",
+        "name": "Spicy Jalapeno Burger",
+        "image_link": "https://i.ibb.co/hdRFk24/Spicy-Jalapeno-Burger.png",
+        "short_description": "Beef patty with spicy jalapenos and pepper jack.",
+        "large_description": "The Spicy Jalapeno Burger is perfect for those who love a bit of heat. It features a juicy beef patty, grilled to perfection and topped with spicy jalapeno slices. The jalapenos add a fiery kick that complements the rich, savory flavor of the beef. Melted pepper jack cheese provides a creamy texture and an additional layer of spiciness. The burger is served on a toasted bun, which holds all the ingredients together perfectly. Fresh lettuce and tomatoes add a refreshing contrast, making this burger a spicy yet balanced delight.",
+        "used_ingredients": [
+            "Beef patty",
+            "Jalapeno slices",
+            "Pepper jack cheese",
+            "Toasted bun",
+            "Lettuce",
+            "Tomatoes"
+        ]
+    },
+    {
+        "title": "burger",
+        "name": "Fish Burger",
+        "image_link": "https://i.ibb.co/xz0yYDV/Fish-Burger-08.png",
+        "short_description": "Crispy fish fillet with tartar sauce.",
+        "large_description": "The Fish Burger is a delicious and unique alternative to traditional beef burgers. It features a crispy, golden-brown fish fillet that is perfectly cooked and seasoned. The fish is light and flaky on the inside, with a satisfying crunch on the outside. It is served on a soft, toasted bun with a generous spread of tartar sauce, which adds a tangy and creamy flavor. Fresh lettuce and tomatoes provide a refreshing crunch, making this burger a delightful and satisfying meal for seafood lovers.",
+        "used_ingredients": [
+            "Crispy fish fillet",
+            "Toasted bun",
+            "Tartar sauce",
+            "Lettuce",
+            "Tomatoes"
+        ]
+    },
+    {
+        "title": "burger",
+        "name": "Double Patty Burger",
+        "image_link": "https://i.ibb.co/pJbVPsk/Double-Patty-Burger-11.png",
+        "short_description": "Two juicy beef patties with double cheese.",
+        "large_description": "The Double Patty Burger is a hearty and satisfying option for those with a big appetite. It features two juicy beef patties, grilled to perfection and stacked high. Each patty is topped with a slice of melted cheese, creating a deliciously gooey and savory flavor. The burger is served on a toasted bun, which holds all the ingredients together perfectly. Fresh lettuce, tomatoes, and pickles add a refreshing contrast, while a spread of ketchup and mustard enhances the overall taste. This burger is a true feast for burger lovers.",
+        "used_ingredients": [
+            "Two beef patties",
+            "Cheddar cheese",
+            "Toasted bun",
+            "Lettuce",
+            "Tomatoes",
+            "Pickles",
+            "Ketchup",
+            "Mustard"
+        ]
+    },
+    {
+        "title": "pizza",
+        "image_link": "https://example.com/pizza.jpg",
+        "name": "Margherita",
+        "short_description": "Classic Italian pizza with tomatoes, mozzarella, and basil.",
+        "long_description": "Margherita pizza is a classic Italian dish named after Queen Margherita of Savoy. It features a thin crust topped with tomatoes, fresh mozzarella cheese, and basil leaves. The simplicity of its ingredients allows each flavor to shine, making it a favorite among pizza lovers worldwide.",
+        "ingredients": [
+            "Tomatoes",
+            "Mozzarella cheese",
+            "Basil",
+            "Olive oil",
+            "Salt",
+            "Pepper"
+        ]
+    },
+    {
+        "title": "pizza",
+        "image_link": "https://example.com/pizza_veggie.jpg",
+        "name": "Vegetarian",
+        "short_description": "Loaded with assorted fresh vegetables and savory cheese.",
+        "long_description": "Vegetarian pizza is a delightful choice for those who prefer a lighter, vegetable-packed option. Typically topped with a variety of fresh vegetables such as bell peppers, mushrooms, onions, and olives, this pizza is both colorful and flavorful. Combined with gooey mozzarella and tangy tomato sauce, it's a wholesome treat for vegetarians and non-vegetarians alike.",
+        "ingredients": [
+            "Bell peppers",
+            "Mushrooms",
+            "Onions",
+            "Olives",
+            "Mozzarella cheese",
+            "Tomato sauce",
+            "Garlic",
+            "Oregano"
+        ]
+    },
+    {
+        "title": "pizza",
+        "image_link": "https://example.com/pizza_pepperoni.jpg",
+        "name": "Pepperoni",
+        "short_description": "Classic favorite topped with spicy pepperoni slices.",
+        "long_description": "Pepperoni pizza is a beloved classic known for its spicy, savory flavor. Featuring slices of pepperoni, a type of salami made from cured pork and beef seasoned with paprika or chili pepper, this pizza packs a punch. Combined with melted mozzarella cheese and tangy tomato sauce on a crispy crust, it's a go-to choice for pizza enthusiasts seeking a bit of heat.",
+        "ingredients": [
+            "Pepperoni",
+            "Mozzarella cheese",
+            "Tomato sauce",
+            "Olive oil",
+            "Basil",
+            "Oregano"
+        ]
+    },
+    {
+        "title": "pizza",
+        "image_link": "https://example.com/pizza_bbq_chicken.jpg",
+        "name": "BBQ Chicken",
+        "short_description": "Grilled chicken, BBQ sauce, and red onions on a pizza.",
+        "long_description": "BBQ Chicken pizza offers a delicious twist with its tangy barbecue sauce, tender grilled chicken, and slices of red onions. The combination of flavors—sweet from the BBQ sauce, savory from the chicken, and mild tang from the onions—creates a mouthwatering experience. Topped with melted mozzarella cheese on a golden crust, it's a favorite for those who enjoy a fusion of barbecue and Italian flavors.",
+        "ingredients": [
+            "Grilled chicken",
+            "BBQ sauce",
+            "Red onions",
+            "Mozzarella cheese",
+            "Olive oil",
+            "Garlic"
+        ]
+    },
+    {
+        "title": "pizza",
+        "image_link": "https://example.com/pizza_hawaiian.jpg",
+        "name": "Hawaiian",
+        "short_description": "Ham, pineapple, and mozzarella cheese on a pizza.",
+        "long_description": "Hawaiian pizza is a tropical delight featuring slices of ham and pineapple chunks atop melted mozzarella cheese. Originating in Canada, this pizza's unique combination of savory and sweet flavors has gained popularity worldwide. The saltiness of the ham contrasts beautifully with the sweetness of the pineapple, making it a refreshing and satisfying choice for pizza lovers.",
+        "ingredients": [
+            "Ham",
+            "Pineapple",
+            "Mozzarella cheese",
+            "Tomato sauce",
+            "Olive oil",
+            "Garlic",
+            "Basil"
+        ]
+    },
+    {
+        "title": "pizza",
+        "image_link": "https://example.com/pizza_meat_lovers.jpg",
+        "name": "Meat Lovers",
+        "short_description": "Loaded with assorted meats like sausage, bacon, and pepperoni.",
+        "long_description": "Meat Lovers pizza is a hearty option for those craving a protein-packed meal. Piled high with a variety of meats such as sausage, bacon, and pepperoni, this pizza delivers robust flavors and satisfying textures. Combined with gooey mozzarella cheese and zesty tomato sauce on a crispy crust, it's a carnivore's dream come true.",
+        "ingredients": [
+            "Sausage",
+            "Bacon",
+            "Pepperoni",
+            "Mozzarella cheese",
+            "Tomato sauce",
+            "Oregano"
+        ]
+    },
+    {
+        "title": "pizza",
+        "image_link": "https://example.com/pizza_seafood.jpg",
+        "name": "Seafood",
+        "short_description": "Assorted seafood toppings like shrimp and clams on a pizza.",
+        "long_description": "Seafood pizza offers a taste of the ocean with its delicious assortment of seafood toppings. Featuring succulent shrimp, tender clams, and sometimes other seafood delights like calamari or mussels, this pizza is a seafood lover's paradise. Combined with creamy mozzarella cheese and a touch of tomato sauce on a crispy crust, it's a delightful choice for those craving something fresh and flavorful.",
+        "ingredients": [
+            "Shrimp",
+            "Clams",
+            "Mozzarella cheese",
+            "Tomato sauce",
+            "Garlic",
+            "Olive oil",
+            "Parsley"
+        ]
+    },
+    {
+        "title": "pizza",
+        "image_link": "https://example.com/pizza_mushroom.jpg",
+        "name": "Mushroom",
+        "short_description": "Loaded with assorted mushrooms and savory cheese.",
+        "long_description": "Mushroom pizza is a savory delight for mushroom enthusiasts. Topped with a variety of mushrooms such as button, cremini, or shiitake, this pizza offers earthy flavors that complement the gooey mozzarella cheese and tangy tomato sauce. Whether enjoyed as a vegetarian option or combined with other toppings, it's a flavorful choice for pizza lovers seeking a taste of umami.",
+        "ingredients": [
+            "Assorted mushrooms",
+            "Mozzarella cheese",
+            "Tomato sauce",
+            "Olive oil",
+            "Garlic",
+            "Oregano"
+        ]
+    },
+    {
+        "title": "pizza",
+        "image_link": "https://example.com/pizza_buffalo_chicken.jpg",
+        "name": "Buffalo Chicken",
+        "short_description": "Spicy buffalo sauce, chicken, and blue cheese on a pizza.",
+        "long_description": "Buffalo Chicken pizza offers a fiery twist with its spicy buffalo sauce, tender chicken pieces, and crumbled blue cheese. The tangy buffalo sauce adds a kick of heat, while the creamy blue cheese balances the flavors perfectly. Topped with mozzarella cheese and a drizzle of ranch or blue cheese dressing on a golden crust, it's a bold and flavorful choice for pizza enthusiasts.",
+        "ingredients": [
+            "Buffalo sauce",
+            "Chicken",
+            "Blue cheese",
+            "Mozzarella cheese",
+            "Tomato sauce",
+            "Olive oil",
+            "Garlic"
+        ]
+    }
+]
