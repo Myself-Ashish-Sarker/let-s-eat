@@ -18,7 +18,7 @@ const AllMenu = () => {
     }, [])
 
     const burgers = items.filter(item => item.title === "burger");
-    const meows = items.filter(item => item.title === "pizza");
+    const pizzas = items.filter(item => item.title === "pizza");
 
     return (
         <div>
@@ -29,33 +29,51 @@ const AllMenu = () => {
             <div className='mt-14'>
 
                 <Tabs forceRenderTabPanel>
-                    <TabList className="flex justify-center gap-7">
-                        <Tab className="border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Pizza</Tab>
-                        <Tab className="border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Burger</Tab>
-                        <Tab className="border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Noodles</Tab>
-                        <Tab className="border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Lunch & Dinner</Tab>
-                        <Tab className="border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Cold Drinks</Tab>
-                        <Tab className="border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Custom Order</Tab>
-                    </TabList>
+                    <div className="tab-list-container overflow-x">
+                        <TabList className="flex justify-center gap-5 tab-list">
+                            <Tab className="border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Pizza</Tab>
+                            <Tab className=" border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Burger</Tab>
+                            <Tab className="border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Noodles</Tab>
+                            <Tab className="border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Lunch & Dinner</Tab>
+                            <Tab className="border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Cold Drinks</Tab>
+                            <Tab className="border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Chocolets</Tab>
+                            <Tab className="border-2 bg-emerald-700 text-white px-1 py-1 rounded-md cursor-pointer">Custom Order</Tab>
+                        </TabList>
+                    </div>
                     <TabPanel>
-                        {
-                            meows.length > 0 ? (
-                                meows.map((meow, index) => (
-                                    <div key={index}>
-                                        <h1>{meow.name}</h1>
-                                    </div>
-                                ))
-                            ) : (
-                                <p>No Cats Avaliable</p>
-                            )
-                        }
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center mt-10 space-y-5'>
+                            {
+                                pizzas.length > 0 ? (
+                                    pizzas.map((pizza, index) => (
+                                        <div key={index} className="card bg-base-100 w-96 h-[28rem] shadow-xl">
+                                            <figure>
+                                                <img
+                                                    src={pizza.image_link}
+                                                    alt="burgers" />
+                                            </figure>
+                                            <div className="card-body">
+                                                <h2 className="card-title">{pizza.name}</h2>
+                                                <p>{pizza.short_description}</p>
+
+                                                <div className='mt-4 flex justify-between'>
+                                                    <button className='btn btn-outline btn-primary'>View Details</button>
+                                                    <button className='btn btn-success text-white'>Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))
+                                ) : (
+                                    <p>No Cats Avaliable</p>
+                                )
+                            }
+                        </div>
                     </TabPanel>
                     <TabPanel>
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center mt-10'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center mt-10 space-y-5'>
                             {
                                 burgers.length > 0 ? (
                                     burgers.map((burger, index) => (
-                                        <div key={index} className="card bg-base-100 w-96 shadow-xl">
+                                        <div key={index} className="card bg-base-100 w-96 h-[28rem] shadow-xl">
                                             <figure>
                                                 <img
                                                     src={burger.image_link}
@@ -67,7 +85,7 @@ const AllMenu = () => {
 
                                                 <div className='mt-4 flex justify-between'>
                                                     <button className='btn btn-outline btn-primary'>View Details</button>
-                                                    <button className='btn btn-success text-white'>Order</button>
+                                                    <button className='btn btn-success text-white'>Add to Cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -95,6 +113,7 @@ const AllMenu = () => {
                     </TabPanel>
                 </Tabs>
             </div>
+
         </div>
     );
 };

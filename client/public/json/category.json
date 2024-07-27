@@ -82,7 +82,7 @@
     {
         "title": "burger",
         "name": "Chicken Burger",
-        "image_link": "https://i.ibb.co/37vKnpj/Chicken-Burger.png",
+        "image_link": "https://i.ibb.co/5LG3qK2/Chicken-Burger.png",
         "short_description": "Grilled chicken breast with lettuce and tomato.",
         "large_description": "The Chicken Burger is a lighter alternative to beef burgers, featuring a tender and juicy grilled chicken breast. The chicken is seasoned to perfection and grilled until it’s slightly charred and full of flavor. It is served on a soft, toasted bun with fresh lettuce and ripe tomatoes, which add a refreshing crunch. A light spread of mayo or a tangy mustard sauce enhances the overall flavor, making this burger a delicious and healthier option. It's perfect for those who prefer a lighter, yet equally satisfying burger experience.",
         "used_ingredients": [
@@ -96,7 +96,7 @@
     {
         "title": "burger",
         "name": "Spicy Jalapeno Burger",
-        "image_link": "https://i.ibb.co/hdRFk24/Spicy-Jalapeno-Burger.png",
+        "image_link": "https://i.ibb.co/r66tdtz/Spicy-Jalapeno-Burger.png",
         "short_description": "Beef patty with spicy jalapenos and pepper jack.",
         "large_description": "The Spicy Jalapeno Burger is perfect for those who love a bit of heat. It features a juicy beef patty, grilled to perfection and topped with spicy jalapeno slices. The jalapenos add a fiery kick that complements the rich, savory flavor of the beef. Melted pepper jack cheese provides a creamy texture and an additional layer of spiciness. The burger is served on a toasted bun, which holds all the ingredients together perfectly. Fresh lettuce and tomatoes add a refreshing contrast, making this burger a spicy yet balanced delight.",
         "used_ingredients": [
@@ -141,7 +141,7 @@
     },
     {
         "title": "pizza",
-        "image_link": "https://example.com/pizza.jpg",
+        "image_link": "https://i.ibb.co/31MHYD8/Margherita.png",
         "name": "Margherita",
         "short_description": "Classic Italian pizza with tomatoes, mozzarella, and basil.",
         "long_description": "Margherita pizza is a classic Italian dish named after Queen Margherita of Savoy. It features a thin crust topped with tomatoes, fresh mozzarella cheese, and basil leaves. The simplicity of its ingredients allows each flavor to shine, making it a favorite among pizza lovers worldwide.",
@@ -156,7 +156,7 @@
     },
     {
         "title": "pizza",
-        "image_link": "https://example.com/pizza_veggie.jpg",
+        "image_link": "https://i.ibb.co/FbG8GC1/Vegetarian.png",
         "name": "Vegetarian",
         "short_description": "Loaded with assorted fresh vegetables and savory cheese.",
         "long_description": "Vegetarian pizza is a delightful choice for those who prefer a lighter, vegetable-packed option. Typically topped with a variety of fresh vegetables such as bell peppers, mushrooms, onions, and olives, this pizza is both colorful and flavorful. Combined with gooey mozzarella and tangy tomato sauce, it's a wholesome treat for vegetarians and non-vegetarians alike.",
@@ -173,7 +173,7 @@
     },
     {
         "title": "pizza",
-        "image_link": "https://example.com/pizza_pepperoni.jpg",
+        "image_link": "https://i.ibb.co/pPDDBXm/Pepperoni.png",
         "name": "Pepperoni",
         "short_description": "Classic favorite topped with spicy pepperoni slices.",
         "long_description": "Pepperoni pizza is a beloved classic known for its spicy, savory flavor. Featuring slices of pepperoni, a type of salami made from cured pork and beef seasoned with paprika or chili pepper, this pizza packs a punch. Combined with melted mozzarella cheese and tangy tomato sauce on a crispy crust, it's a go-to choice for pizza enthusiasts seeking a bit of heat.",
@@ -188,7 +188,7 @@
     },
     {
         "title": "pizza",
-        "image_link": "https://example.com/pizza_bbq_chicken.jpg",
+        "image_link": "https://i.ibb.co/SdBPgHC/BBQChicken-Pizza-17.png",
         "name": "BBQ Chicken",
         "short_description": "Grilled chicken, BBQ sauce, and red onions on a pizza.",
         "long_description": "BBQ Chicken pizza offers a delicious twist with its tangy barbecue sauce, tender grilled chicken, and slices of red onions. The combination of flavors—sweet from the BBQ sauce, savory from the chicken, and mild tang from the onions—creates a mouthwatering experience. Topped with melted mozzarella cheese on a golden crust, it's a favorite for those who enjoy a fusion of barbecue and Italian flavors.",
@@ -203,7 +203,7 @@
     },
     {
         "title": "pizza",
-        "image_link": "https://example.com/pizza_hawaiian.jpg",
+        "image_link": "https://i.ibb.co/7KHcyLC/Hawaiian-Pizza.png",
         "name": "Hawaiian",
         "short_description": "Ham, pineapple, and mozzarella cheese on a pizza.",
         "long_description": "Hawaiian pizza is a tropical delight featuring slices of ham and pineapple chunks atop melted mozzarella cheese. Originating in Canada, this pizza's unique combination of savory and sweet flavors has gained popularity worldwide. The saltiness of the ham contrasts beautifully with the sweetness of the pineapple, making it a refreshing and satisfying choice for pizza lovers.",
@@ -219,7 +219,7 @@
     },
     {
         "title": "pizza",
-        "image_link": "https://example.com/pizza_meat_lovers.jpg",
+        "image_link": "https://i.ibb.co/5ssfKSS/Meat-Lovers-Pizza.png",
         "name": "Meat Lovers",
         "short_description": "Loaded with assorted meats like sausage, bacon, and pepperoni.",
         "long_description": "Meat Lovers pizza is a hearty option for those craving a protein-packed meal. Piled high with a variety of meats such as sausage, bacon, and pepperoni, this pizza delivers robust flavors and satisfying textures. Combined with gooey mozzarella cheese and zesty tomato sauce on a crispy crust, it's a carnivore's dream come true.",
@@ -234,7 +234,7 @@
     },
     {
         "title": "pizza",
-        "image_link": "https://example.com/pizza_seafood.jpg",
+        "image_link": "https://i.ibb.co/THPWzfC/Seafood-Pizza.png",
         "name": "Seafood",
         "short_description": "Assorted seafood toppings like shrimp and clams on a pizza.",
         "long_description": "Seafood pizza offers a taste of the ocean with its delicious assortment of seafood toppings. Featuring succulent shrimp, tender clams, and sometimes other seafood delights like calamari or mussels, this pizza is a seafood lover's paradise. Combined with creamy mozzarella cheese and a touch of tomato sauce on a crispy crust, it's a delightful choice for those craving something fresh and flavorful.",
@@ -250,7 +250,7 @@
     },
     {
         "title": "pizza",
-        "image_link": "https://example.com/pizza_mushroom.jpg",
+        "image_link": "https://i.ibb.co/Jzs6JLd/Mushroom-Pizza.png",
         "name": "Mushroom",
         "short_description": "Loaded with assorted mushrooms and savory cheese.",
         "long_description": "Mushroom pizza is a savory delight for mushroom enthusiasts. Topped with a variety of mushrooms such as button, cremini, or shiitake, this pizza offers earthy flavors that complement the gooey mozzarella cheese and tangy tomato sauce. Whether enjoyed as a vegetarian option or combined with other toppings, it's a flavorful choice for pizza lovers seeking a taste of umami.",
@@ -265,7 +265,7 @@
     },
     {
         "title": "pizza",
-        "image_link": "https://example.com/pizza_buffalo_chicken.jpg",
+        "image_link": "https://i.ibb.co/fG86khc/Buffalo-Chicken-Pizza.png",
         "name": "Buffalo Chicken",
         "short_description": "Spicy buffalo sauce, chicken, and blue cheese on a pizza.",
         "long_description": "Buffalo Chicken pizza offers a fiery twist with its spicy buffalo sauce, tender chicken pieces, and crumbled blue cheese. The tangy buffalo sauce adds a kick of heat, while the creamy blue cheese balances the flavors perfectly. Topped with mozzarella cheese and a drizzle of ranch or blue cheese dressing on a golden crust, it's a bold and flavorful choice for pizza enthusiasts.",
