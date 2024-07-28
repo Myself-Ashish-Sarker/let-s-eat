@@ -20,6 +20,7 @@ const client = new MongoClient(uri, {
     serverApi: {
         version: ServerApiVersion.v1,
         strict: true,
+        directConnection: true,
         deprecationErrors: true,
     }
 });
@@ -30,7 +31,22 @@ async function run() {
 
         // await client.connect();
 
+        // declaring datatbase
+        const categoryCollection = client.db("lets-eat").collection("category");
+        const servicesCollection = client.db("lets-eat").collection("services");
+        // declaring datatbase
+
         // all api will written here
+        // category api
+        app.get('/category', async (req, res) => {
+            const result = await categoryCollection.find().toArray();
+            res.send(result);
+        })
+        app.get('/services', async (req, res) => {
+            const result = await categoryCollection.find().toArray();
+            res.send(result);
+        })
+        // category api
         // all api will written here
 
 
