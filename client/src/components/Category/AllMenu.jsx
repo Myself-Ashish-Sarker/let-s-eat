@@ -1,21 +1,32 @@
 import { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import useAxiosPublic from '../../hooks/useAxiosPublic';
 
 const AllMenu = () => {
 
-    const [items, allItems] = useState([]);
+    const [items, setItems] = useState([]);
+
+    const axiosPublic = useAxiosPublic();
 
     useEffect(() => {
-        fetch("json/category.json")
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                allItems(data)
-            })
-            .catch(err => console.log(err))
+        // fetch("json/category.json")
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log(data);
+        //         allItems(data)
+        //     })
+        //     .catch(err => console.log(err))
 
-    }, [])
+        axiosPublic.get("/category")
+            .then(res => {
+                console.log(res.data);
+                setItems(res.data);
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    }, [axiosPublic])
 
     const burgers = items.filter(item => item.title === "burger");
     const pizzas = items.filter(item => item.title === "pizza");
@@ -111,6 +122,7 @@ const AllMenu = () => {
                         <p>Alien from Decapod 10. Planet Express' staff doctor and steward. Has a medical degree and Ph.D in art history.</p>
                         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Dr_John_Zoidberg.png/200px-Dr_John_Zoidberg.png" alt="Doctor John Zoidberg" />
                     </TabPanel>
+                    <TabPanel></TabPanel>
                 </Tabs>
             </div>
 
