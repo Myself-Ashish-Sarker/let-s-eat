@@ -10,14 +10,6 @@ const AllMenu = () => {
     const axiosPublic = useAxiosPublic();
 
     useEffect(() => {
-        // fetch("json/category.json")
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data);
-        //         allItems(data)
-        //     })
-        //     .catch(err => console.log(err))
-
         axiosPublic.get("/category")
             .then(res => {
                 console.log(res.data);
