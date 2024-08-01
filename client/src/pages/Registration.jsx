@@ -13,24 +13,26 @@ const Registration = () => {
         e.preventDefault();
 
         const form = e.target;
+        const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
 
-        const logObj = { email, password };
+        const logObj = { name, email, password };
         console.log(logObj);
 
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
 
-                const user = { email, password };
+                const user = { name, email, password };
+
                 axiosPublic.post("/users", user)
-                .then(res => {
-                    console.log(res.data);
-                })
-                .catch(err => {
-                    console.log(err);
-                })
+                    .then(res => {
+                        console.log(res.data);
+                    })
+                    .catch(err => {
+                        console.log(err);
+                    })
             })
     }
 
@@ -38,11 +40,17 @@ const Registration = () => {
         <div className="flex justify-center mt-24">
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <form onSubmit={handleReg} className="card-body">
+                <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Name</span>
+                        </label>
+                        <input type="text" placeholder="Full Name" className="input input-bordered" name="name" required />
+                    </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" placeholder="email" className="input input-bordered" name="email" required />
+                        <input type="email" placeholder="Email" className="input input-bordered" name="email" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
