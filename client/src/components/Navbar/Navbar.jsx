@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { IoPersonCircle } from "react-icons/io5";
 
 // main logo
 import mainLogo from "/main_logo/main_logo.png";
+import { AuthContext } from '../../providers/AuthProvider';
 // main logo
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch()
+    }
 
     const links = <>
         <li><Link to="/" className='font-semibold text-white'>Home</Link></li>
@@ -64,7 +73,12 @@ const Navbar = () => {
                             <ul
                                 tabIndex={0}
                                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                                <li><Link to="/login">Login</Link></li>
+                                {
+                                    user ?
+                                        <li><Link onClick={handleLogOut}>Log Out</Link></li>
+                                    :
+                                    <li><Link to="/login">Log In</Link></li>
+                                }
                                 <li><Link>Dark Mode</Link></li>
                             </ul>
                         </div>
