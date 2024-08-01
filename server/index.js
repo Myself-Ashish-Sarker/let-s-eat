@@ -2,17 +2,28 @@ const express = require('express');
 const cors = require('cors');
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const app = express();
+const jwt = require('jsonwebtoken');
 require("dotenv").config();
 const port = process.env.PORT || 5000;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@mongo-app.q62fegx.mongodb.net/?retryWrites=true&w=majority&appName=mongo-app`;
 
 // middleware
 app.use(cors());
 app.use(express.json());
 // middleware
 
+// jwtUtils
+const generateTokens = user => {
+    return jwt.sign(user, process.env.JWT_KEY, {
+        expiresIn: '1h' // token will expire in 1 hour
+    });
+}
+
+// jwtUtils
+
 // mongo config
 // const uri = "mongodb+srv://lets-eat:Sgo1jB5Be7qNnvVz@mongo-app.q62fegx.mongodb.net/?retryWrites=true&w=majority&appName=mongo-app";
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@mongo-app.q62fegx.mongodb.net/?retryWrites=true&w=majority&appName=mongo-app`;
+
 
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -33,7 +44,8 @@ async function run() {
 
         // declaring datatbase
         const categoryCollection = client.db("lets-eat").collection("category");
-        const servicesCollection = client.db("lets-eat").collection("services");
+        const usersCollection = client.db("lets-eat").collection("users");
+
         // declaring datatbase
 
         // all api will written here
@@ -42,11 +54,21 @@ async function run() {
             const result = await categoryCollection.find().toArray();
             res.send(result);
         })
-        app.get('/services', async (req, res) => {
-            const result = await categoryCollection.find().toArray();
+        // category api
+
+        // user api
+        app.post('/users', async (req, res) => {
+            const query = req.body;
+            const result = await usersCollection.insertOne(query)
             res.send(result);
         })
-        // category api
+
+        app.get('/users', async (req, res) => {
+            const result = await usersCollection.find().toArray();
+            res.send(result);
+        })
+        // user api
+
         // all api will written here
 
 

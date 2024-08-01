@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
+import useAxiosPublic from "../hooks/useAxiosPublic";
+import { useContext } from "react";
 
 const Registration = () => {
+
+    const { createUser } = useContext(AuthContext);
+
+    const axiosPublic = useAxiosPublic();
 
     const handleReg = (e) => {
         e.preventDefault();
@@ -11,6 +18,20 @@ const Registration = () => {
 
         const logObj = { email, password };
         console.log(logObj);
+
+        createUser(email, password)
+            .then(result => {
+                console.log(result.user);
+
+                const user = { email, password };
+                axiosPublic.post("/users", user)
+                .then(res => {
+                    console.log(res.data);
+                })
+                .catch(err => {
+                    console.log(err);
+                })
+            })
     }
 
     return (
@@ -21,13 +42,13 @@ const Registration = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" placeholder="email" className="input input-bordered" required />
+                        <input type="email" placeholder="email" className="input input-bordered" name="email" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Password</span>
                         </label>
-                        <input type="password" placeholder="password" className="input input-bordered" required />
+                        <input type="password" placeholder="password" className="input input-bordered" name="password" required />
                     </div>
                     <div>
                         <h1>Already have an account? <Link to="/login">Login</Link></h1>
