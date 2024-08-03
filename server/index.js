@@ -13,11 +13,6 @@ app.use(express.json());
 // middleware
 
 // jwtUtils
-const generateTokens = user => {
-    return jwt.sign(user, process.env.JWT_KEY, {
-        expiresIn: '1h' // token will expire in 1 hour
-    });
-}
 
 // jwtUtils
 
@@ -59,8 +54,9 @@ async function run() {
         // user api
         app.post('/users', async (req, res) => {
             const query = req.body;
-            const result = await usersCollection.insertOne(query)
-            res.send(result);
+            const result = await usersCollection.insertOne(query);
+            const token = generateTokens({ email: query.email, name: query.name });
+            res.send({ result, token });
         })
 
         app.get('/users', async (req, res) => {
@@ -68,6 +64,11 @@ async function run() {
             res.send(result);
         })
         // user api
+
+
+        // jwt related api
+        app.post
+        // jwt related api
 
         // all api will written here
 

@@ -20,6 +20,12 @@ const Navbar = () => {
     const links = <>
         <li><Link to="/" className='font-semibold text-white'>Home</Link></li>
         <li><Link to="/category" className='font-semibold text-white'>Category</Link></li>
+        {
+            user ?
+                <li><Link to="/dashboard" className='font-semibold text-white'>Dashboard</Link></li>
+                :
+                <div></div>
+        }
         <li><Link to="/contact" className='font-semibold text-white'>Contact</Link></li>
         <li><Link to="/about" className='font-semibold text-white'>About</Link></li>
     </>

@@ -1,10 +1,18 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
 const Login = () => {
 
-    const { signIn } = useContext(AuthContext);
+    const { user, signIn } = useContext(AuthContext);
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (user) {
+            navigate("/");
+        }
+    }, [user, navigate])
 
     const handleLog = (e) => {
         e.preventDefault();
@@ -23,6 +31,8 @@ const Login = () => {
             .catch(err => {
                 console.log(err.messgae);
             })
+            
+            navigate('/');
     }
 
     return (

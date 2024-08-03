@@ -1,11 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import useAxiosPublic from "../hooks/useAxiosPublic";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 const Registration = () => {
 
-    const { createUser } = useContext(AuthContext);
+    const { user, createUser } = useContext(AuthContext);
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (user) {
+            navigate("/");
+        }
+    }, [user, navigate])
 
     const axiosPublic = useAxiosPublic();
 
@@ -29,6 +37,9 @@ const Registration = () => {
                 axiosPublic.post("/users", user)
                     .then(res => {
                         console.log(res.data);
+
+                        // store JWT token
+                        localStorage.setItem('token', res.data.token);
                     })
                     .catch(err => {
                         console.log(err);
@@ -40,7 +51,7 @@ const Registration = () => {
         <div className="flex justify-center mt-24">
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <form onSubmit={handleReg} className="card-body">
-                <div className="form-control">
+                    <div className="form-control">
                         <label className="label">
                             <span className="label-text">Name</span>
                         </label>
