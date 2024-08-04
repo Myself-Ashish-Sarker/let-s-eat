@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
+import { AuthContext } from '../../providers/AuthProvider';
 import { Link } from 'react-router-dom';
 import { IoPersonCircle } from "react-icons/io5";
 
 // main logo
 import mainLogo from "/main_logo/main_logo.png";
-import { AuthContext } from '../../providers/AuthProvider';
 // main logo
 
 const Navbar = () => {
@@ -14,8 +14,10 @@ const Navbar = () => {
     const handleLogOut = () => {
         logOut()
             .then()
-            .catch()
-    }
+            .catch(error => {
+                console.error(error);
+            });
+    };
 
     const links = <>
         <li><Link to="/" className='font-semibold text-white'>Home</Link></li>
@@ -28,10 +30,10 @@ const Navbar = () => {
         }
         <li><Link to="/contact" className='font-semibold text-white'>Contact</Link></li>
         <li><Link to="/about" className='font-semibold text-white'>About</Link></li>
-    </>
+    </>;
+
     return (
         <div className='pb-[4.3rem]'>
-
             <div className="navbar bg-emerald-500 fixed z-50">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -56,7 +58,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <Link to="/">
-                        <img className='w-12' src={mainLogo} alt="" />
+                        <img className='w-12' src={mainLogo} alt="main logo" />
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -66,14 +68,10 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <div className="flex-none">
-                        
                         <div className="z-50 dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                 <div className="text-5xl rounded-full">
-                                    {/* <img
-                                        alt="Tailwind CSS Navbar component"
-                                        src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" /> */}
-                                    <IoPersonCircle className="" />
+                                    <IoPersonCircle />
                                 </div>
                             </div>
                             <ul
@@ -81,19 +79,24 @@ const Navbar = () => {
                                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                                 {
                                     user ?
-                                        <li><Link onClick={handleLogOut}>Log Out</Link></li>
-                                    :
-                                    <li><Link to="/login">Log In</Link></li>
+                                        <li><Link to="/account-details">Account Details</Link></li>
+                                        :
+                                        <></>
                                 }
                                 <li><Link>Dark Mode</Link></li>
+                                {
+                                    user ?
+                                        <>
+                                            <li><Link onClick={handleLogOut}>Log Out</Link></li>
+                                        </>
+                                        :
+                                        <li><Link to="/login">Log In</Link></li>
+                                }
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     );
 };

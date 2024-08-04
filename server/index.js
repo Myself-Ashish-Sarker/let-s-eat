@@ -55,8 +55,7 @@ async function run() {
         app.post('/users', async (req, res) => {
             const query = req.body;
             const result = await usersCollection.insertOne(query);
-            const token = generateTokens({ email: query.email, name: query.name });
-            res.send({ result, token });
+            res.send(result);
         })
 
         app.get('/users', async (req, res) => {
@@ -67,7 +66,6 @@ async function run() {
 
 
         // jwt related api
-        app.post
         // jwt related api
 
         // all api will written here
